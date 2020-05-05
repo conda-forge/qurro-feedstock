@@ -1,21 +1,21 @@
 {% set name = "qurro" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c911927525ed823d65cc017beb1ba8ab9dc7226986141bcb998233915c1620d
+  sha256: a7ac334777b73e67a292e823e43e397f92c0fbe7d305e68f986003dac19bb79d
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - qurro=qurro.scripts._plot:plot
     - q2-qurro=qurro.q2.plugin_setup:plugin
-  skip: True  # [py<35 or py>37 or win]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  skip: true  # [py<35 or py>37 or win]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -45,7 +45,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: "Visualizes 'omic feature rankings and log ratios"
+  summary: Visualizes 'omic feature rankings and log ratios
   description: |
     Qurro generates interactive visualizations of feature rankings (defined
     as some sortable measure of feature-wise variation, for example estimated
@@ -56,4 +56,4 @@ about:
 
 extra:
   recipe-maintainers:
-      - fedarko
+    - fedarko
