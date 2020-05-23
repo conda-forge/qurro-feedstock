@@ -1,5 +1,5 @@
 {% set name = "qurro" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a7ac334777b73e67a292e823e43e397f92c0fbe7d305e68f986003dac19bb79d
+  sha256: 6168772a8351ad9fa0c60931684dd75d459e58c7135d51012f3b85ce043a8833
 
 build:
   number: 0
