@@ -15,7 +15,7 @@ build:
   entry_points:
     - qurro=qurro.scripts._plot:plot
     - q2-qurro=qurro.q2.plugin_setup:plugin
-  skip: true  # [py<36 or win]
+  skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
