@@ -10,7 +10,7 @@ source:
   sha256: b8c9ef36de770c4a1668fc6baf8e40aaa64700772330012421d3193e8d2af287
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - qurro=qurro.scripts._plot:plot
     - q2-qurro=qurro.q2.plugin_setup:plugin
