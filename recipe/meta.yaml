@@ -10,7 +10,7 @@ source:
   sha256: 4c839ef124c695c19b338e31a959905fb59118e9deb47bb5dd596683f983eea2
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - qurro=qurro.scripts._plot:plot
     - q2-qurro=qurro.q2.plugin_setup:plugin
@@ -30,7 +30,6 @@ requirements:
     - biom-format >=2.1.9
     - h5py
     - click
-    - {{ pin_compatible('numpy') }}
     - scipy >=1.3.0
     - pandas >=1
     - scikit-bio >0.5.3
